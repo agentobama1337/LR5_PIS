@@ -71,7 +71,7 @@ AND company_id = {companyId}
 |--------------------|-----------|-----|-------------------|-------------------------|----------------|
 | applications | company | string | Название компании | SELECT company FROM tbl_companies WHERE id = {companyId} | + |
 | applications | position | string | Должность | SELECT position FROM tbl_user_responses WHERE user_id = {userId} AND company_id = {companyId} | + |
-| applications | date | TIMESTAMP |  | SELECT date FROM tbl_user_responses WHERE user_id = {userId} AND company_id = {companyId} | + |
+| applications | date | TIMESTAMP | Дата подачи заявки | SELECT date FROM tbl_user_responses WHERE user_id = {userId} AND company_id = {companyId} | + |
 | applications | status | number | Статус заявки | SELECT status FROM tbl_user_responses WHERE user_id = {userId} AND company_id = {companyId} | + |
 | applications | location | string | Место работы | SELECT location FROM tbl_user_responses WHERE user_id = {userId} AND company_id = {companyId} | + |
 | applications | companyLogo | string | Ссылка на логотип компании | SELECT logo FROM tbl_companies WHERE id = {companyId} | + |
